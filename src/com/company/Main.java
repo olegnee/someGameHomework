@@ -83,6 +83,7 @@ public class Main {
             }
         try(FileWriter bw = new FileWriter(tempTxt)) {
             bw.write(resultOfCreation.toString());
+            bw.flush();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
